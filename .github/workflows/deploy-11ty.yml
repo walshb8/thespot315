@@ -23,6 +23,7 @@ concurrency:
 env:
   NODE_ENV: build
   BASE_URL: ${{ github.event.repository.name }}
+  FULL_URL: ${{ steps.deployment.outputs.page_url }}
 
 jobs:
   # Single deploy job since we're just deploying
