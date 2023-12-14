@@ -23,7 +23,7 @@ concurrency:
 env:
   NODE_ENV: build
   BASE_URL: ${{ github.event.repository.name }}
-  FULL_URL: ${{ github.event.repository.html_url }}
+  FULL_URL: ${{ github.event.repository.homepage }}
 
 jobs:
   # Single deploy job since we're just deploying
