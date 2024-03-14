@@ -148,7 +148,7 @@ main {
   /* this is the selector that makes sure the nav is always visible on desktop  */
   .nav-items-list-hidden {
     opacity: 1;
-    pointer-events: none;
+    pointer-events: all;
     transform: none;
     transition: all 0.3s;
   }
