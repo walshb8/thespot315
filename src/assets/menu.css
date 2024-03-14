@@ -3,6 +3,7 @@
   --header-height: 130px;
   /* this is the background color of the header bar and panel */
   --menu-bg: #9ae9cf;
+  --menu-highlight-hover: white;
 }
 
 * {
@@ -12,11 +13,11 @@
 }
 
 /* this is the component that contains the top nav bar */
-header {
+.main-nav-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   height: var(--header-height);
   position: fixed;
@@ -28,6 +29,14 @@ header {
 /* this is img element that is the header logo */
 .header-logo {
   padding: 1rem;
+}
+.header-logo-link {
+  display: flex;
+  align-items: center;
+}
+.header-logo-link:hover {
+  background-color: var(--menu-highlight-hover);
+  transition: background-color 0.3s;
 }
 .nav-items-list {
   display: flex;
@@ -49,7 +58,7 @@ header {
   opacity: 0;
   pointer-events: none;
   /* you can replace this with a different transform to change the direction it moves out in */
-  transform: translateX(100px);
+  transform: translateY(-100px);
   transition: all 0.3s;
 }
 /* this is the styling that is applied to the menu links on mobile */
@@ -58,6 +67,11 @@ header {
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
+  transition: background-color 0.3s;
+}
+.nav-items-list a:hover {
+  background-color: var(--menu-highlight-hover);
+  transition: background-color 0.3s;
 }
 /* this is the element that contains the hamburger button that positions it vertically within the header bar */
 .nav-button-right {
@@ -97,7 +111,9 @@ main {
 @media (min-width: 640px) {
   /* this makes the top bar menu items go across in a row on desktop */
   nav.main-nav {
+    display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   /* this is the element that contains the 3 nav items on DESKTOP */
