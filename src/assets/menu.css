@@ -1,8 +1,8 @@
 :root {
   /* this is the height of the header bar */
-  --header-height: 130px;
+  --header-height: 70px;
   /* this is the background color of the header bar and panel */
-  --menu-bg: #9ae9cf;
+  --menu-bg: white;
   --menu-highlight-hover: white;
 }
 
@@ -32,7 +32,7 @@
 .main-nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   width: 100%;
   height: var(--header-height);
@@ -44,7 +44,10 @@
 }
 /* this is img element that is the header logo */
 .header-logo {
-  padding: 1rem;
+  margin: 4px 6px;
+  padding: 10px 144px 10px 3px;
+  min-width: 174px;
+
 }
 .header-logo-link {
   display: flex;
@@ -81,7 +84,7 @@
 /* this is the styling that is applied to the menu links on mobile */
 .nav-items-list a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 10px;
   padding: 1rem;
   text-align: center;
   transition: background-color 0.3s;

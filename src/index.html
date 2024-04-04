@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include 'head', title:'My Homepage' %}
+  {% include 'head', title:'The Spot' %}
   <body class="home">
     {% include 'header' %}
     <main id="main-content">
-      <h1>Home</h1>
-      <img
-        src="/assets/sample-img.jpg"
-        alt="A pizza"
-        style="max-width: 700px"
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo
-        amet voluptate quis doloremque harum. Omnis esse atque, mollitia
-        consequatur dolore dicta ratione, dignissimos sunt molestias earum
-        obcaecati! Accusantium, ipsam.
-      </p>
+        <section class="spot-bg">
+            <h1>The Spot</h1>
+        </section>
+        <nav class="list">
+            <ul> <a href="#">About Us</a> </ul>
+            <ul> <a href="#">Obstacles</a> </ul>
+            <ul> <a href="#">Events</a> </ul>
+        </nav>
+
+    <div class="colorbar"></div>
+
+      <p class="open">Open 24/7 To The Public</p>
+      
+        <div class="map"><iframe width="277px" height="240px" frameborder="4px" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1121%20E%20Washington%20St,%20Syracuse,%20NY%2013210+(The%20Spot)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
+        </div>
+        
+        
+        <section class="spot-bgbottom">
+            
+        </section>
     </main>
     {% include 'footer' %}
   </body>

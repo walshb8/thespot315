@@ -35,7 +35,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     background-color: white;
-    padding: 14px 12px;
+    padding: 14px 35px;
     max-height: 147px;
     z-index: 1;
 }
@@ -109,10 +109,9 @@ footer {
 }
 
 .footerlogo {
-    padding: 0px 13px 0px 0px;
-    position: relative;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
     background-color: black;
-    display: flex;
 } 
 
 .footertext {
@@ -124,3 +123,14 @@ footer {
     padding: 3%;
     text-align: center;
 }
+
+.h1secondary {
+    color: #FFF;
+    background-color: black;
+    font-family: Kanit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
