@@ -25,6 +25,10 @@ main {
   min-width: 174px;
 }
 
+.header-logo {
+  margin-top: 10px;
+}
+
 .menu {
   position: relative;
   float: right;
@@ -53,6 +57,7 @@ h1 {
   padding: 14px 35px;
   max-height: 147px;
   z-index: 1;
+  margin-top: 0%;
 }
 
 a {
@@ -171,3 +176,29 @@ footer {
     padding-top: 10px;
     width: 400px;
  }
+
+ .obstacleimg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 12px;
+    width: 423px;
+    height: 314px;
+    flex-grow: 1;
+    
+ }
+
+  h2 {
+  position: relative;
+  right: 7rem;
+}
+
+@media (min-width: 1068px) {
+
+  .header-logo {
+    margin-top: 56px;
+  }
+
+}
+
+

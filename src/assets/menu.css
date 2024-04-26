@@ -61,12 +61,12 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: var(--header-height);
+  top: 70px;
   left: 0;
   width: 100%;
   /* set this to auto if you don't want the mobile nav to fill the screen */
 
-  height: calc(100vh - 130px);
+  height: auto;
   /* if you want the flyout nav to have a different background color, put it here */
   background: var(--menu-bg);
   transition: all 0.3s;
@@ -84,7 +84,7 @@
 /* this is the styling that is applied to the menu links on mobile */
 .nav-items-list a {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 30px;
   padding: 1rem;
   text-align: center;
   transition: background-color 0.3s;
@@ -99,7 +99,7 @@
   display: flex;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 5px;
   right: 0;
 }
 .sr-only {
@@ -120,7 +120,7 @@
   z-index: 1000;
 }
 .btn-toggle-menu:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 /* this makes sure the header doesn't cover any page content */
 main {
