@@ -164,7 +164,7 @@ footer {
   font-weight: 300;
   margin: 0;
   text-align: left;
-  padding-top: 10px;
+  padding: 10px 0 20px 0;
   width: 400px;
  }
 
@@ -185,7 +185,6 @@ footer {
     width: 423px;
     height: 314px;
     flex-grow: 1;
-    
  }
 
   h2 {
@@ -201,4 +200,21 @@ footer {
 
 }
 
+ .flowerimg {
+  padding: 20px;
+ }
+
+ .calender {
+  padding: 30px;
+ }
+
+ .eventimg {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 12px;
+  width: 530px;
+  height: 400px;
+  flex-grow: 1;
+ }
 
