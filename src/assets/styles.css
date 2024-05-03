@@ -60,7 +60,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   background-color: white;
-  padding: 14px 35px;
+  padding: 15px 35px;
   max-height: 147px;
   z-index: 1;
   margin-top: 0%;
@@ -72,9 +72,19 @@ a {
   color: black;
 }
 
-a:hover {
-  text-decoration: underline;
+.imglink:hover {
+  border-top-style: solid;
+  border-color: black;
+  border-bottom-style: none;
+  border-width: 15px;
 }
+
+a:hover {
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: #d43490;
+}
+
 
 .open {
   padding-right: 68px;
@@ -106,11 +116,16 @@ ul {
   background: linear-gradient(
     90deg,
     rgba(212, 52, 144, 1) 0%,
-    rgba(231, 230, 20, 1) 50%,
+    #e7e614 50%,
     rgba(248, 154, 66, 1) 100%
   );
   margin: auto;
 }
+
+.colorbarpad{
+  padding-top: 10vh;
+}
+
 .map {
   border-color: black;
   border-width: 4px;
@@ -164,14 +179,46 @@ footer {
   width: 100%;
 }
 
+.h2event {
+  position: relative;
+  font-size: clamp(25px, 15vw, 60px);
+  padding: 0 50px;
+  right: 10vw;
+}
+
+.h2aboutus {
+  font-size: clamp(25px, 15vw, 60px);
+  padding: 0 50px;
+}
+
  .aboutusp {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
   text-align: left;
-  padding: 10px 0 20px 0;
-  width: 400px;
+  padding: 10px 20px 20px 20px;
+  max-width: 400px;
+  min-width: 200px;
  }
+
+ .video {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+ .yt {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  padding-top: 56.25%;
+ }
+
 
  .obstaclesp {
     font-size: 20px;
@@ -187,33 +234,51 @@ footer {
     max-width: 100%;
  }
 
-  h2 {
+  .obsh2 {
   position: relative;
   left: 10vw;
   font-size: clamp(25px, 15vw, 60px);
 }
 
-.flowerimg {
-  padding: 20px;
+
+ .imgflexau {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  max-width: 150%;
+  min-width: 100px;
  }
 
  .calender {
-  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px
  }
+
+ .container{
+  position: relative;
+  height: 0;
+  width: 70%;
+  padding-bottom: 50%;
+ }
+
 
  .eventimg {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
   padding: 12px;
-  width: 530px;
-  height: 400px;
-  flex-grow: 1;
+  width: 95.5%;
+  height: auto;
  }
 
 .obs main {
   display: block;
 }
+
  .center {
   display: flex;
   justify-content: center;
@@ -255,5 +320,3 @@ footer {
 
 
 }
-
-
